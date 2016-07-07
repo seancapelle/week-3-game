@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The Psychic Game</title>
+	<title>Star Wars Hangman</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link href="assets/css/reset.css" rel="stylesheet">
 	<link href="assets/css/style.css" rel="stylesheet">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <div class="container">
 	<div class="row">
-		<div class="col-md-12">
-			<h1>The Psychic Game</h1>
+		<div class="col-md-12">	
+			<h2>A long time ago, in a galaxy far, far away...</h2>
 		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<p class="top">Guess what letter I'm thinking of???</p>
-				<p>Wins:<div id="wins"></div></p>
-				<br>
-				<p>Losses:<div id="losses"></div></p>
-				<br>
-				<p>Guesses Left:<div id="guessesLeft"></div></p>
-				<br>
-				<p>Your Guesses So Far:<div id="guessedLetters"></div></p>
-			<br>
-			</div>
-		</div>
-			<script src="assets/javascript/game.js"></script>
 	</div>
+	<div class="row border">
+		<div class="col-md-4 left">
+			<p>Number of Guesses Remaining: <div id="guessesLeft"></div></p>
+		</div>
+		<div class="col-md-4">
+			<img src="assets/images/StarWarsLogo.png" class="logo">
+			<h1>Hangman</h1>
+			<div id="game"></div>
+			<br>
+			<p>Letters Already Guessed: <div id="guessedLetters"></div></p>
+		</div>
+		<div class="col-md-4 right">
+			<p>Wins: <div id="wins"></div></p>
+		</div>
+	</div>
+<script src="assets/javascript/game.js"></script>
+</div>
 </div>
 </body>
 </html>
